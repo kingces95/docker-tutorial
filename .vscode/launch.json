@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "type": "node",
+            "name": "Attach to container",
+            "request": "attach",
+            "port": 9229,
+            "address": "localhost",
+            "localRoot": "${workspaceFolder}/app",
+            "remoteRoot": "/app",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+        },
+        {
+            "type": "docker",
+            "name": "Docker Node.js Launch",
+            "request": "launch",
+            "preLaunchTask": "docker-run: debug",
+            "platform": "node"
+        }
+    ]
+}
