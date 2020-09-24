@@ -24,9 +24,9 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "echo postCreateCommand && cd app && yarn install",
-	"postStartCommand": "echo postStartCommand",
-	"postAttachCommand": "echo postAttachCommand",
+	"postCreateCommand": "echo postCreateCommand && echo create > create.txt",
+	"postStartCommand": "echo postStartCommand && echo start > start.txt",
+	"postAttachCommand": "echo postAttachCommand && echo attach > attach.txt",
 	"shutdownAction": "none",
 
 	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
